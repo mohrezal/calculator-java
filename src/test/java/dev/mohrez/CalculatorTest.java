@@ -16,17 +16,17 @@ public class CalculatorTest {
 
     @Test()
     public void additionTwoPositiveDoubleNumbers(){
-       double result =  calculator.add(2.5,3);
+        double result = calculator.addition(1.5,4).doubleValue();
         assertEquals(5.5,result,DELTA);
     }
     @Test()
     public void  additionTwoNegativeDoubleNumbers(){
-        double result = calculator.add(-1.87,-2);
+        double result = calculator.addition(-1.87,-2).doubleValue();
         assertEquals(-3.87,result,DELTA);
     }
     @Test()
     public void additionWithZeroNumber(){
-        double result =  calculator.add(1.0,0);
+        double result =  calculator.addition(1.0,0).doubleValue();
         assertEquals(1.0,result,DELTA);
     }
 }
