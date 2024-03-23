@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="refactor: whole application">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add short tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/AdditionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +19,7 @@
         <option value="JUnit5 Test Class" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit3 Test Class" />
       </list>
     </option>
   </component>
@@ -36,35 +37,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.CalculatorTest.additionLongNumber.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.additionTwoPositiveDoubleNumbers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.divideByZero.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.divisionByZero.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.subtractionTwoNegativeDoubleNumbers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.subtractionTwoPositiveDoubleNumbers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.subtractionWithZeroNumber.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.zeroDoublePlusZeroDoubleIsEqualToZeroDouble.executor&quot;: &quot;Debug&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AdditionTest.executor": "Run",
+    "JUnit.CalculatorTest.additionLongNumber.executor": "Run",
+    "JUnit.CalculatorTest.additionTwoPositiveDoubleNumbers.executor": "Run",
+    "JUnit.CalculatorTest.divideByZero.executor": "Run",
+    "JUnit.CalculatorTest.divisionByZero.executor": "Run",
+    "JUnit.CalculatorTest.executor": "Run",
+    "JUnit.CalculatorTest.subtractionTwoNegativeDoubleNumbers.executor": "Run",
+    "JUnit.CalculatorTest.subtractionTwoPositiveDoubleNumbers.executor": "Run",
+    "JUnit.CalculatorTest.subtractionWithZeroNumber.executor": "Run",
+    "JUnit.CalculatorTest.zeroDoublePlusZeroDoubleIsEqualToZeroDouble.executor": "Debug",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -73,7 +75,22 @@
       <recent name="dev.mohrez" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest">
+  <component name="RunManager" selected="JUnit.AdditionTest">
+    <configuration name="AdditionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.mohrez.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.AdditionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
@@ -121,22 +138,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.subtractionTwoNegativeDoubleNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.mohrez.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="subtractionTwoNegativeDoubleNumbers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CalculatorTest.subtractionWithZeroNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
@@ -155,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdditionTest" />
         <item itemvalue="JUnit.CalculatorTest" />
         <item itemvalue="JUnit.CalculatorTest.divisionByZero" />
         <item itemvalue="JUnit.CalculatorTest.divideByZero" />
         <item itemvalue="JUnit.CalculatorTest.subtractionWithZeroNumber" />
-        <item itemvalue="JUnit.CalculatorTest.subtractionTwoNegativeDoubleNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711220210723</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: add short tests">
+      <option name="closed" value="true" />
+      <created>1711220790692</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711220790692</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,6 +286,7 @@
     <MESSAGE value="feat: add `multiplication` method and test cases" />
     <MESSAGE value="feat: add `division` method and test cases" />
     <MESSAGE value="refactor: whole application" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: whole application" />
+    <MESSAGE value="feat: add short tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add short tests" />
   </component>
 </project>
