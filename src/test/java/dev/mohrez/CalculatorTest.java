@@ -71,7 +71,6 @@ public class CalculatorTest {
         double result  = calculator.subtraction(1,2);
         assertEquals(-1,result,DELTA);
     }
-
     @Test()
     public void subtractionTwoNegativeDoubleNumbers(){
         double result  = calculator.subtraction(-1,-1);
@@ -102,4 +101,43 @@ public class CalculatorTest {
         long result = calculator.subtraction(1L,1L);
         assertEquals(0L,result);
     }
+    // MULTIPLICATION TESTS
+    @Test
+    public void multiplicationTwoPositiveDoubleNumbers() {
+        double result = calculator.multiplication(2.5, 4.0);
+        assertEquals(10.0, result, DELTA);
+    }
+    @Test
+    public void multiplicationTwoNegativeDoubleNumbers() {
+        double result = calculator.multiplication(-2.5, -4.0);
+        assertEquals(10.0, result, DELTA);
+    }
+    @Test
+    public void multiplicationWithZeroNumber() {
+
+        double result = calculator.multiplication(0.0, 5.0);
+        assertEquals(0.0, result, DELTA);
+    }
+    @Test
+    public void multiplicationTwoPositiveIntNumbers() {
+        int result = calculator.multiplication(5, 2);
+        assertEquals(10, result);
+    }
+    @Test
+    public void multiplicationTwoNegativeIntNumbers() {
+        int result = calculator.multiplication(-3, -4);
+        assertEquals(12, result);
+    }
+    @Test
+    public void multiplicationPositiveAndNegativeIntNumber() {
+
+        int result = calculator.multiplication(2, -3);
+        assertEquals(-6, result);
+    }
+    @Test
+    public void multiplicationTwoPositiveLongNumbers() {
+        long result = calculator.multiplication(100000L, 100L);
+        assertEquals(10000000L, result);
+    }
+
 }

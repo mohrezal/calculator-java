@@ -9,4 +9,8 @@ public class Calculator {
         Subtraction<T> subtraction = new Subtraction<>();
         return subtraction.calculate(num1,num2);
     }
+    public <T extends Number> T multiplication(T num1,T num2){
+        Multiplication<T> multiplication = new Multiplication<>();
+        return multiplication.calculate(num1,num2);
+    }
 }
