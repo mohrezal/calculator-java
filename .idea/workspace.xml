@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add `subtraction` method and test">
+    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add `multiplication` method and test cases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Division.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +43,7 @@
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.CalculatorTest.additionLongNumber.executor": "Run",
     "JUnit.CalculatorTest.additionTwoPositiveDoubleNumbers.executor": "Run",
+    "JUnit.CalculatorTest.divideByZero.executor": "Run",
     "JUnit.CalculatorTest.executor": "Run",
     "JUnit.CalculatorTest.subtractionTwoNegativeDoubleNumbers.executor": "Run",
     "JUnit.CalculatorTest.subtractionTwoPositiveDoubleNumbers.executor": "Run",
@@ -87,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.additionLongNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.divideByZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
@@ -97,7 +99,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="dev.mohrez" />
       <option name="MAIN_CLASS_NAME" value="dev.mohrez.CalculatorTest" />
-      <option name="METHOD_NAME" value="additionLongNumber" />
+      <option name="METHOD_NAME" value="divideByZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.divisionByZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.mohrez.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.mohrez" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.CalculatorTest" />
+      <option name="METHOD_NAME" value="divisionByZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,22 +132,6 @@
       <option name="PACKAGE_NAME" value="dev.mohrez" />
       <option name="MAIN_CLASS_NAME" value="dev.mohrez.CalculatorTest" />
       <option name="METHOD_NAME" value="subtractionTwoNegativeDoubleNumbers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.subtractionTwoPositiveDoubleNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.mohrez.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.CalculatorTest" />
-      <option name="METHOD_NAME" value="subtractionTwoPositiveDoubleNumbers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.divisionByZero" />
+        <item itemvalue="JUnit.CalculatorTest.divideByZero" />
         <item itemvalue="JUnit.CalculatorTest.subtractionWithZeroNumber" />
         <item itemvalue="JUnit.CalculatorTest.subtractionTwoNegativeDoubleNumbers" />
-        <item itemvalue="JUnit.CalculatorTest.subtractionTwoPositiveDoubleNumbers" />
-        <item itemvalue="JUnit.CalculatorTest.additionLongNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711185589018</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: add `multiplication` method and test cases">
+      <option name="closed" value="true" />
+      <created>1711186374746</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711186374746</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +258,7 @@
     <MESSAGE value="refactor: addition method" />
     <MESSAGE value="feat: add all addition tests" />
     <MESSAGE value="feat: add `subtraction` method and test" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add `subtraction` method and test" />
+    <MESSAGE value="feat: add `multiplication` method and test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add `multiplication` method and test cases" />
   </component>
 </project>

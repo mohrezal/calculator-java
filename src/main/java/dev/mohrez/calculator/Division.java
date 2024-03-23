@@ -4,8 +4,7 @@ public class Division<T extends Number> implements ICalculator<T>{
     @Override
     public T calculate(T num1, T num2) throws ArithmeticException {
         if (num2.doubleValue() == 0) {
-            String errorMessage = String.format("You can not divide, s% by s%.",num1,num2);
-            throw new ArithmeticException(errorMessage);
+            throw new ArithmeticException("Dividing by zero is not allowed.");
         }
 
         double result = num1.doubleValue() / num2.doubleValue();

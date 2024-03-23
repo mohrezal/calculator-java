@@ -13,4 +13,8 @@ public class Calculator {
         Multiplication<T> multiplication = new Multiplication<>();
         return multiplication.calculate(num1,num2);
     }
+    public <T extends Number> T division(T num1,T num2){
+        Division<T> division = new Division<>();
+        return division.calculate(num1,num2);
+    }
 }
