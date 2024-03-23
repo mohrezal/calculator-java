@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class MultiplicationTest {
 
     private Multiplication multiplication = null;
-    private final double DELTA = 0.0001;
+    private final double DELTA = 0.000001;
     @Before
     public void setUp() {
         multiplication = new Multiplication();

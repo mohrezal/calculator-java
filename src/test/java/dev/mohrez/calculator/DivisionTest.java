@@ -11,7 +11,7 @@ import static org.junit.Assert.assertThrows;
 public class DivisionTest {
 
     private Division division = null;
-    private final double DELTA = 0.0001;
+    private final double DELTA = 0.000001;
     @Before
     public void setUp() {
         division = new Division();

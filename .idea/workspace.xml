@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add short tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/AdditionTest.java" afterDir="false" />
+    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="refactor: move all test to different files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +49,7 @@
     "JUnit.CalculatorTest.subtractionTwoNegativeDoubleNumbers.executor": "Run",
     "JUnit.CalculatorTest.subtractionTwoPositiveDoubleNumbers.executor": "Run",
     "JUnit.CalculatorTest.subtractionWithZeroNumber.executor": "Run",
+    "JUnit.CalculatorTest.testMultiplicationDouble.executor": "Run",
     "JUnit.CalculatorTest.zeroDoublePlusZeroDoubleIsEqualToZeroDouble.executor": "Debug",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -69,13 +70,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="dev.mohrez.calculator" />
       <recent name="dev.mohrez" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AdditionTest">
+  <component name="RunManager" selected="JUnit.SubtractionTest">
     <configuration name="AdditionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
@@ -106,22 +109,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.divideByZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.mohrez.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="divideByZero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CalculatorTest.divisionByZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
@@ -138,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.subtractionWithZeroNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.testMultiplicationDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
@@ -148,19 +135,34 @@
       </extension>
       <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
       <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="subtractionWithZeroNumber" />
+      <option name="METHOD_NAME" value="testMultiplicationDouble" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SubtractionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.mohrez.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.SubtractionTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AdditionTest" />
+        <item itemvalue="JUnit.SubtractionTest" />
         <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.testMultiplicationDouble" />
+        <item itemvalue="JUnit.AdditionTest" />
         <item itemvalue="JUnit.CalculatorTest.divisionByZero" />
-        <item itemvalue="JUnit.CalculatorTest.divideByZero" />
-        <item itemvalue="JUnit.CalculatorTest.subtractionWithZeroNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711220790692</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="refactor: move all test to different files">
+      <option name="closed" value="true" />
+      <created>1711224018955</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1711224018955</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,6 +297,7 @@
     <MESSAGE value="feat: add `division` method and test cases" />
     <MESSAGE value="refactor: whole application" />
     <MESSAGE value="feat: add short tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add short tests" />
+    <MESSAGE value="refactor: move all test to different files" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: move all test to different files" />
   </component>
 </project>

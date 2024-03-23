@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class AdditionTest {
     private Addition addition = null;
-    private final double DELTA = 0.0001;
+    private final double DELTA = 0.000001;
     @Before
     public void setUp() {
         addition = new Addition();
