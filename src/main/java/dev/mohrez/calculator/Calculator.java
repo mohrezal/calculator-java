@@ -5,4 +5,8 @@ public class Calculator {
         Addition<T> addition =  new Addition<>();
         return addition.calculate(num1,num2);
     }
+    public <T extends Number> T subtraction(T num1, T num2){
+        Subtraction<T> subtraction = new Subtraction<>();
+        return subtraction.calculate(num1,num2);
+    }
 }
