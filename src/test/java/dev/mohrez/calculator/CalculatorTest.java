@@ -61,11 +61,34 @@ public class CalculatorTest {
     }
 
     @Test()
+    public void additionTwoPositiveShortNumber() {
+        short result = calculator.addition((short) 1,  (short)1);
+        assertEquals((short) 2, result);
+    }
+
+    @Test()
+    public void additionTwoPositiveShortNumbers() {
+        short result = calculator.addition((short)1, (short)1);
+        assertEquals((short) 2, result);
+    }
+
+    @Test()
+    public void additionTwoNegativeShortNumbers() {
+        short result = calculator.addition((short) -10,(short) -2);
+        assertEquals((short) -12, result);
+    }
+
+    @Test()
+    public void additionPositiveAndNegativeShortNumber() {
+        short result = calculator.addition((short)-1,(short) 1);
+        assertEquals((short) 0, result);
+    }
+
+    @Test()
     public void additionTwoPositiveLongNumber() {
         long result = calculator.addition(1, 1);
         assertEquals(2L, result);
     }
-
     //SUBTRACTION TESTS
     @Test()
     public void subtractionTwoPositiveDoubleNumbers() {
@@ -107,6 +130,30 @@ public class CalculatorTest {
     public void subtractionTwoPositiveLongNumber() {
         long result = calculator.subtraction(1L, 1L);
         assertEquals(0L, result);
+    }
+
+    @Test()
+    public void subtractionTwoPositiveShortNumbers() {
+        short result = calculator.subtraction((short) 5, (short) 1);
+        assertEquals((short) 4, result);
+    }
+
+    @Test()
+    public void subtractionTwoNegativeShortNumbers() {
+        int result = calculator.subtraction((short) -1,(short) -2);
+        assertEquals((short) 1, result);
+    }
+
+    @Test()
+    public void subtractionPositiveAndNegativeShortNumber() {
+        short result = calculator.subtraction((short)1,(short) -1);
+        assertEquals(2, result);
+    }
+
+    @Test()
+    public void subtractionTwoPositiveShortNumber() {
+        short result = calculator.subtraction((short) 1, (short) 1);
+        assertEquals((short) 0, result);
     }
 
     // MULTIPLICATION TESTS
@@ -154,6 +201,12 @@ public class CalculatorTest {
         assertEquals(10000000L, result);
     }
 
+    @Test
+    public void multiplicationTwoPositiveShortNumbers() {
+        short result = calculator.multiplication((short) 100000, (short)100);
+        assertEquals((short)10000000, result);
+    }
+
     //DIVISION TESTS
     @Test
     public void divisionTwoPositiveDoubleNumbers() {
@@ -197,6 +250,11 @@ public class CalculatorTest {
         assertThrows(ArithmeticException.class, () -> {
             calculator.division(10.0, 0.0);
         });
+    }
+    @Test
+    public void divisionTwoPositiveShortNumbers() {
+        short result = calculator.division((short) 10, (short) 2.0);
+        assertEquals((short)5, result);
     }
 
 }

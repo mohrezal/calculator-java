@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="refactor: move `CalculatorTest`">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/IOperation.java" afterDir="false" />
+    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="refactor: whole application">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Addition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Addition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Division.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/ICalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/ICalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Multiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Multiplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Subtraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Subtraction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -251,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711187099254</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="refactor: whole application">
+      <option name="closed" value="true" />
+      <created>1711220210723</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711220210723</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,6 +276,7 @@
     <MESSAGE value="feat: add `subtraction` method and test" />
     <MESSAGE value="feat: add `multiplication` method and test cases" />
     <MESSAGE value="feat: add `division` method and test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add `division` method and test cases" />
+    <MESSAGE value="refactor: whole application" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: whole application" />
   </component>
 </project>
