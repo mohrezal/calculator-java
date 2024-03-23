@@ -1,20 +1,35 @@
 package dev.mohrez.calculator;
 
-public class Division<T extends Number> implements ICalculator<T>{
+public class Division implements IOperation {
     @Override
-    public T calculate(T num1, T num2) throws ArithmeticException {
-        if (num2.doubleValue() == 0) {
-            throw new ArithmeticException("Dividing by zero is not allowed.");
+    public long calculate(long num1, long num2) throws ArithmeticException {
+        if (num2 == 0) {
+            throw new ArithmeticException("Division by zero is not allowed");
         }
+        return num1 / num2;
+    }
 
-        double result = num1.doubleValue() / num2.doubleValue();
-
-        if (num1 instanceof Double || num2 instanceof Double) {
-            return (T) Double.valueOf(result);
-        } else if (num1 instanceof Long || num2 instanceof Long) {
-            return (T) Long.valueOf((long) result);
-        } else {
-            return (T) Integer.valueOf((int) result);
+    @Override
+    public int calculate(int num1, int num2) throws ArithmeticException {
+        if (num2 == 0) {
+            throw new ArithmeticException("Division by zero is not allowed");
         }
+        return num1 / num2;
+    }
+
+    @Override
+    public double calculate(double num1, double num2) throws ArithmeticException {
+        if (num2 == 0) {
+            throw new ArithmeticException("Division by zero is not allowed");
+        }
+        return num1 / num2;
+    }
+
+    @Override
+    public short calculate(short num1, short num2) throws ArithmeticException {
+        if (num2 == 0) {
+            throw new ArithmeticException("Division by zero is not allowed");
+        }
+        return (short) (num1 / num2);
     }
 }

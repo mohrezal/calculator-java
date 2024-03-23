@@ -26,19 +26,19 @@ public class CalculatorTest {
     //ADDITION TEST
     @Test()
     public void additionTwoPositiveDoubleNumbers() {
-        double result = calculator.addition(1.5, 4).doubleValue();
+        double result = calculator.addition(1.5, 4);
         assertEquals(5.5, result, DELTA);
     }
 
     @Test()
     public void additionTwoNegativeDoubleNumbers() {
-        double result = calculator.addition(-1.87, -2).doubleValue();
+        double result = calculator.addition(-1.87, -2);
         assertEquals(-3.87, result, DELTA);
     }
 
     @Test()
     public void additionWithZeroNumber() {
-        double result = calculator.addition(1.0, 0).doubleValue();
+        double result = calculator.addition(1.0, 0);
         assertEquals(1.0, result, DELTA);
     }
 
