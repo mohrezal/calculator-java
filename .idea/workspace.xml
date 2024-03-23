@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add `multiplication` method and test cases">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Division.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/CalculatorTest.java" afterDir="false" />
+    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add `division` method and test cases">
+      <change afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/AdditionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/CalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,7 @@
     "JUnit.CalculatorTest.additionLongNumber.executor": "Run",
     "JUnit.CalculatorTest.additionTwoPositiveDoubleNumbers.executor": "Run",
     "JUnit.CalculatorTest.divideByZero.executor": "Run",
+    "JUnit.CalculatorTest.divisionByZero.executor": "Run",
     "JUnit.CalculatorTest.executor": "Run",
     "JUnit.CalculatorTest.subtractionTwoNegativeDoubleNumbers.executor": "Run",
     "JUnit.CalculatorTest.subtractionTwoPositiveDoubleNumbers.executor": "Run",
@@ -55,7 +54,8 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
@@ -78,12 +78,12 @@
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.mohrez.*" />
+          <option name="PATTERN" value="dev.mohrez.calculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.CalculatorTest" />
+      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.CalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,12 +93,12 @@
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.mohrez.*" />
+          <option name="PATTERN" value="dev.mohrez.calculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.CalculatorTest" />
+      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.CalculatorTest" />
       <option name="METHOD_NAME" value="divideByZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -109,12 +109,12 @@
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.mohrez.*" />
+          <option name="PATTERN" value="dev.mohrez.calculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.CalculatorTest" />
+      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.CalculatorTest" />
       <option name="METHOD_NAME" value="divisionByZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -125,12 +125,12 @@
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.mohrez.*" />
+          <option name="PATTERN" value="dev.mohrez.calculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.CalculatorTest" />
+      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.CalculatorTest" />
       <option name="METHOD_NAME" value="subtractionTwoNegativeDoubleNumbers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -141,12 +141,12 @@
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.mohrez.*" />
+          <option name="PATTERN" value="dev.mohrez.calculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.CalculatorTest" />
+      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.CalculatorTest" />
       <option name="METHOD_NAME" value="subtractionWithZeroNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -236,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711186374746</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: add `division` method and test cases">
+      <option name="closed" value="true" />
+      <created>1711187099254</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711187099254</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +267,7 @@
     <MESSAGE value="feat: add all addition tests" />
     <MESSAGE value="feat: add `subtraction` method and test" />
     <MESSAGE value="feat: add `multiplication` method and test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add `multiplication` method and test cases" />
+    <MESSAGE value="feat: add `division` method and test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add `division` method and test cases" />
   </component>
 </project>

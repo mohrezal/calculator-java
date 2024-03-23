@@ -1,4 +1,4 @@
-package dev.mohrez;
+package dev.mohrez.calculator;
 
 import dev.mohrez.calculator.Calculator;
 import org.junit.After;
