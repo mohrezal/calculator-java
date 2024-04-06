@@ -6,8 +6,6 @@ public class Calculator implements ICalculator {
     private final Multiplication multiplication = new Multiplication();
     private final Division division = new Division();
 
-    // ADDITION METHODS
-
     @Override
     public Number multiplication(Number num1, Number num2) {
         return multiplication.calculate(num1,num2);
@@ -15,16 +13,16 @@ public class Calculator implements ICalculator {
 
     @Override
     public Number addition(Number num1, Number num2) {
-        return null;
+        return addition.calculate(num1,num2);
     }
 
     @Override
     public Number subtraction(Number num1, Number num2) {
-        return null;
+        return subtraction.calculate(num1,num2);
     }
 
     @Override
     public Number division(Number num1, Number num2) {
-        return null;
+        return division.calculate(num1,num2);
     }
 }
