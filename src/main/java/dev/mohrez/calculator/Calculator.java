@@ -7,84 +7,24 @@ public class Calculator implements ICalculator {
     private final Division division = new Division();
 
     // ADDITION METHODS
-    @Override
-    public double addition(double num1, double num2){
-        return addition.calculate(num1,num2);
-    }
 
     @Override
-    public long addition(long num1, long num2){
-        return addition.calculate(num1,num2);
-    }
-    @Override
-    public short addition(short num1, short num2){
-        return addition.calculate(num1,num2);
-    }
-    @Override
-    public int addition(int num1, int num2){
-        return addition.calculate(num1,num2);
-    }
-
-    //SUBTRACTION METHODS
-
-    @Override
-    public long subtraction(long num1, long num2){
-        return subtraction.calculate(num1,num2);
-    }
-
-    @Override
-    public int subtraction(int num1, int num2){
-        return subtraction.calculate(num1,num2);
-    }
-
-    @Override
-    public short subtraction(short num1, short num2){
-        return subtraction.calculate(num1,num2);
-    }
-
-    @Override
-    public double subtraction(double num1, double num2){
-        return subtraction.calculate(num1,num2);
-    }
-    //MULTIPLICATION METHODS
-    @Override
-    public long multiplication(long num1, long num2){
+    public Number multiplication(Number num1, Number num2) {
         return multiplication.calculate(num1,num2);
     }
 
     @Override
-    public int multiplication(int num1, int num2){
-        return multiplication.calculate(num1,num2);
+    public Number addition(Number num1, Number num2) {
+        return null;
     }
 
     @Override
-    public short multiplication(short num1, short num2){
-        return multiplication.calculate(num1,num2);
+    public Number subtraction(Number num1, Number num2) {
+        return null;
     }
 
     @Override
-    public double multiplication(double num1, double num2){
-        return multiplication.calculate(num1,num2);
-    }
-
-    //DIVISION METHODS
-    @Override
-    public long division(long num1, long num2){
-        return division.calculate(num1,num2);
-    }
-
-    @Override
-    public int division(int num1, int num2){
-        return division.calculate(num1,num2);
-    }
-
-    @Override
-    public short division(short num1, short num2){
-        return division.calculate(num1,num2);
-    }
-
-    @Override
-    public double division(double num1, double num2){
-        return division.calculate(num1,num2);
+    public Number division(Number num1, Number num2) {
+        return null;
     }
 }
