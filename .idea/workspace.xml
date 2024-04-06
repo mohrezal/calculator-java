@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="chore: cleanup application">
+    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: Multiplication, Subtraction, Division class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Addition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Addition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/IOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/IOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/AdditionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/AdditionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,7 @@
     "JUnit.CalculatorTest.subtractionWithZeroNumber.executor": "Run",
     "JUnit.CalculatorTest.testMultiplicationDouble.executor": "Run",
     "JUnit.CalculatorTest.zeroDoublePlusZeroDoubleIsEqualToZeroDouble.executor": "Debug",
+    "JUnit.SubtractionTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -83,7 +83,7 @@
       <recent name="dev.mohrez" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SubtractionTest">
+  <component name="RunManager" selected="JUnit.AdditionTest">
     <configuration name="AdditionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
@@ -163,10 +163,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdditionTest" />
         <item itemvalue="JUnit.SubtractionTest" />
         <item itemvalue="JUnit.CalculatorTest" />
         <item itemvalue="JUnit.CalculatorTest.testMultiplicationDouble" />
-        <item itemvalue="JUnit.AdditionTest" />
         <item itemvalue="JUnit.CalculatorTest.divisionByZero" />
       </list>
     </recent_temporary>
@@ -284,7 +284,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712424832748</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: Addition class">
+      <option name="closed" value="true" />
+      <created>1712426735520</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712426735520</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: Multiplication, Subtraction, Division class">
+      <option name="closed" value="true" />
+      <created>1712427046305</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712427046305</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,6 +328,8 @@
     <MESSAGE value="feat: add short tests" />
     <MESSAGE value="refactor: move all test to different files" />
     <MESSAGE value="chore: cleanup application" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: cleanup application" />
+    <MESSAGE value="feat: Addition class" />
+    <MESSAGE value="feat: Multiplication, Subtraction, Division class" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Multiplication, Subtraction, Division class" />
   </component>
 </project>
