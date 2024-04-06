@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: Multiplication, Subtraction, Division class">
+    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add AdditionTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/AdditionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/AdditionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/DivisionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/DivisionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/MultiplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/MultiplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/SubtractionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/SubtractionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,10 @@
     "JUnit.CalculatorTest.subtractionWithZeroNumber.executor": "Run",
     "JUnit.CalculatorTest.testMultiplicationDouble.executor": "Run",
     "JUnit.CalculatorTest.zeroDoublePlusZeroDoubleIsEqualToZeroDouble.executor": "Debug",
+    "JUnit.DivisionTest.executor": "Run",
+    "JUnit.MultiplicationTest,canMultiplyPositiveAndNegativeFloats and 1 more.executor": "Run",
     "JUnit.SubtractionTest.executor": "Run",
+    "JUnit.calculator in Calculator.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -68,9 +74,11 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -83,7 +91,7 @@
       <recent name="dev.mohrez" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AdditionTest">
+  <component name="RunManager" selected="JUnit.calculator in Calculator">
     <configuration name="AdditionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
@@ -99,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DivisionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
@@ -108,40 +116,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.CalculatorTest" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.DivisionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.divisionByZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiplicationTest,canMultiplyPositiveAndNegativeFloats and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.mohrez.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="divisionByZero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.testMultiplicationDouble" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.mohrez.calculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.CalculatorTest" />
-      <option name="METHOD_NAME" value="testMultiplicationDouble" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="dev.mohrez.calculator.MultiplicationTest,canMultiplyPositiveAndNegativeFloats" />
+        <pattern testClass="dev.mohrez.calculator.MultiplicationTest,canMultiplyTwoLongs" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,13 +148,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="calculator in Calculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calculator" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AdditionTest" />
+        <item itemvalue="JUnit.calculator in Calculator" />
         <item itemvalue="JUnit.SubtractionTest" />
-        <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="JUnit.CalculatorTest.testMultiplicationDouble" />
-        <item itemvalue="JUnit.CalculatorTest.divisionByZero" />
+        <item itemvalue="JUnit.MultiplicationTest,canMultiplyPositiveAndNegativeFloats and 1 more" />
+        <item itemvalue="JUnit.DivisionTest" />
+        <item itemvalue="JUnit.AdditionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -179,6 +174,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711107255292</updated>
+      <workItem from="1712433665665" duration="1293000" />
     </task>
     <task id="LOCAL-00001" summary="feat: init test">
       <option name="closed" value="true" />
@@ -300,8 +296,19 @@
       <option name="project" value="LOCAL" />
       <updated>1712427046305</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: add AdditionTest">
+      <option name="closed" value="true" />
+      <created>1712428099869</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712428099869</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -330,6 +337,7 @@
     <MESSAGE value="chore: cleanup application" />
     <MESSAGE value="feat: Addition class" />
     <MESSAGE value="feat: Multiplication, Subtraction, Division class" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Multiplication, Subtraction, Division class" />
+    <MESSAGE value="feat: add AdditionTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add AdditionTest" />
   </component>
 </project>
