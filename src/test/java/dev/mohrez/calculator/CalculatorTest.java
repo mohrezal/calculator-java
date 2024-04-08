@@ -5,6 +5,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.sql.SQLException;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThrows;
 
@@ -14,7 +16,7 @@ public class CalculatorTest {
     private final double DELTA = 0.000001;
 
     @Before
-    public void setUp() {
+    public void setUp() throws SQLException {
         calculator = new Calculator();
     }
 
