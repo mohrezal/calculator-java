@@ -3,7 +3,7 @@ package dev.mohrez.calculator.repository;
 import java.sql.Connection;
 
 public class DivisionRepository extends CalculatorRepository{
-    DivisionRepository(Connection connection) {
+    public DivisionRepository(Connection connection) {
         super(connection, "division");
     }
 }

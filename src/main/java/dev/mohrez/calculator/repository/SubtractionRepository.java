@@ -3,7 +3,7 @@ package dev.mohrez.calculator.repository;
 import java.sql.Connection;
 
 public class SubtractionRepository  extends CalculatorRepository{
-    SubtractionRepository(Connection connection) {
+    public SubtractionRepository(Connection connection) {
         super(connection, "subtraction");
     }
 }
