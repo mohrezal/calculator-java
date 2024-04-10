@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/repository/AdditionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/repository/CalculatorEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/repository/CalculatorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/repository/OperationType.java" afterDir="false" />
+    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add database connection">
+      <change afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/repository/AdditionRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/repository/AdditionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/repository/AdditionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/repository/CalculatorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/repository/CalculatorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/repository/CalculatorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/repository/CalculatorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/repository/OperationType.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +23,9 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
-        <option value="JUnit3 Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit3 Test Class" />
       </list>
     </option>
   </component>
@@ -43,110 +43,122 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.AdditionTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.additionLongNumber.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.additionTwoPositiveDoubleNumbers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.divideByZero.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.divisionByZero.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.subtractionTwoNegativeDoubleNumbers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.subtractionTwoPositiveDoubleNumbers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.subtractionWithZeroNumber.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.testMultiplicationDouble.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CalculatorTest.zeroDoublePlusZeroDoubleIsEqualToZeroDouble.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.DivisionTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MultiplicationTest,canMultiplyPositiveAndNegativeFloats and 1 more.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SubtractionTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.calculator in Calculator.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AdditionRepositoryTest.canGetAllAdditionRecords.executor": "Run",
+    "JUnit.AdditionRepositoryTest.canSaveMultipleRecords.executor": "Run",
+    "JUnit.AdditionRepositoryTest.canSaveNewAdditionRecord.executor": "Run",
+    "JUnit.AdditionRepositoryTest.executor": "Run",
+    "JUnit.AdditionTest.executor": "Run",
+    "JUnit.CalculatorTest.additionLongNumber.executor": "Run",
+    "JUnit.CalculatorTest.additionTwoPositiveDoubleNumbers.executor": "Run",
+    "JUnit.CalculatorTest.divideByZero.executor": "Run",
+    "JUnit.CalculatorTest.divisionByZero.executor": "Run",
+    "JUnit.CalculatorTest.executor": "Run",
+    "JUnit.CalculatorTest.subtractionTwoNegativeDoubleNumbers.executor": "Run",
+    "JUnit.CalculatorTest.subtractionTwoPositiveDoubleNumbers.executor": "Run",
+    "JUnit.CalculatorTest.subtractionWithZeroNumber.executor": "Run",
+    "JUnit.CalculatorTest.testMultiplicationDouble.executor": "Run",
+    "JUnit.CalculatorTest.zeroDoublePlusZeroDoubleIsEqualToZeroDouble.executor": "Debug",
+    "JUnit.DivisionTest.executor": "Run",
+    "JUnit.MultiplicationTest,canMultiplyPositiveAndNegativeFloats and 1 more.executor": "Run",
+    "JUnit.SubtractionTest.executor": "Run",
+    "JUnit.calculator in Calculator.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="dev.mohrez.calculator.repository" />
       <recent name="dev.mohrez.calculator" />
       <recent name="dev.mohrez" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AdditionTest">
-    <configuration name="AdditionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AdditionRepositoryTest.canSaveMultipleRecords">
+    <configuration name="AdditionRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.mohrez.calculator.*" />
+          <option name="PATTERN" value="dev.mohrez.calculator.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.AdditionTest" />
+      <option name="PACKAGE_NAME" value="dev.mohrez.calculator.repository" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.repository.AdditionRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DivisionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdditionRepositoryTest.canGetAllAdditionRecords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.mohrez.calculator.*" />
+          <option name="PATTERN" value="dev.mohrez.calculator.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.DivisionTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="dev.mohrez.calculator.repository" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.repository.AdditionRepositoryTest" />
+      <option name="METHOD_NAME" value="canGetAllAdditionRecords" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiplicationTest,canMultiplyPositiveAndNegativeFloats and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdditionRepositoryTest.canSaveMultipleRecords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="dev.mohrez.calculator.MultiplicationTest,canMultiplyPositiveAndNegativeFloats" />
-        <pattern testClass="dev.mohrez.calculator.MultiplicationTest,canMultiplyTwoLongs" />
-      </patterns>
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.mohrez.calculator.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.mohrez.calculator.repository" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.repository.AdditionRepositoryTest" />
+      <option name="METHOD_NAME" value="canSaveMultipleRecords" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubtractionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdditionRepositoryTest.canSaveNewAdditionRecord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.mohrez.calculator.*" />
+          <option name="PATTERN" value="dev.mohrez.calculator.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.mohrez.calculator" />
-      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.SubtractionTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="dev.mohrez.calculator.repository" />
+      <option name="MAIN_CLASS_NAME" value="dev.mohrez.calculator.repository.AdditionRepositoryTest" />
+      <option name="METHOD_NAME" value="canSaveNewAdditionRecord" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdditionRepositoryTest.canSaveMultipleRecords" />
+        <item itemvalue="JUnit.AdditionRepositoryTest.canGetAllAdditionRecords" />
+        <item itemvalue="JUnit.AdditionRepositoryTest.canSaveNewAdditionRecord" />
+        <item itemvalue="JUnit.AdditionRepositoryTest" />
         <item itemvalue="JUnit.calculator in Calculator" />
-        <item itemvalue="JUnit.SubtractionTest" />
-        <item itemvalue="JUnit.MultiplicationTest,canMultiplyPositiveAndNegativeFloats and 1 more" />
-        <item itemvalue="JUnit.DivisionTest" />
-        <item itemvalue="JUnit.AdditionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +191,9 @@
       <updated>1711107255292</updated>
       <workItem from="1712433665665" duration="2099000" />
       <workItem from="1712514447063" duration="294000" />
-      <workItem from="1712569012832" duration="790000" />
+      <workItem from="1712569012832" duration="5150000" />
+      <workItem from="1712582543812" duration="3190000" />
+      <workItem from="1712739375466" duration="604000" />
     </task>
     <task id="LOCAL-00001" summary="feat: init test">
       <option name="closed" value="true" />
@@ -317,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712435023550</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: add database connection">
+      <option name="closed" value="true" />
+      <created>1712570006726</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712570006726</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,6 +374,7 @@
     <MESSAGE value="feat: Multiplication, Subtraction, Division class" />
     <MESSAGE value="feat: add AdditionTest" />
     <MESSAGE value="feat: add test" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add test" />
+    <MESSAGE value="feat: add database connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add database connection" />
   </component>
 </project>
