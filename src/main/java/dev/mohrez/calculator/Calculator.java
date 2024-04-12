@@ -54,7 +54,6 @@ public class Calculator implements ICalculator {
     @Override
     public Number division(Number num1, Number num2) throws SQLException {
         Number result = division.calculate(num1, num2);
-        System.out.println(result);
         saveCalculation(divisionRepository, num1, "/", num2, result);
         return result;
     }
@@ -77,7 +76,7 @@ public class Calculator implements ICalculator {
         double resultValue = result.doubleValue();
         String statement = "(%.2f) %s (%.2f) = %.2f";
         String formattedStatement = String.format(statement, num1Value, operator, num2Value, resultValue);
-       repository.save(new CalculatorEntity(formattedStatement));
+        repository.save(new CalculatorEntity(formattedStatement));
     }
 
 }
