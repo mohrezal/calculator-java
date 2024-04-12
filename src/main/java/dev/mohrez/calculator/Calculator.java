@@ -5,6 +5,8 @@ import dev.mohrez.calculator.repository.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Calculator implements ICalculator {
     // Operation methods
@@ -52,14 +54,30 @@ public class Calculator implements ICalculator {
     @Override
     public Number division(Number num1, Number num2) throws SQLException {
         Number result = division.calculate(num1, num2);
+        System.out.println(result);
         saveCalculation(divisionRepository, num1, "/", num2, result);
         return result;
     }
 
-    private void saveCalculation(CalculatorRepository repository, Number num1, String operator, Number num2, Number result) throws SQLException {
-        // Constants
-        String statement = "%s %s %s = %s";
-        String formattedStatement = String.format(statement, num1, operator, num2, result);
-        repository.save(new CalculatorEntity(formattedStatement));
+    public void history() throws SQLException {
+        List<CalculatorEntity> records = new ArrayList<>();
+        records.addAll(additionRepository.findAll());
+        records.addAll(divisionRepository.findAll());
+        records.addAll(multiplicationRepository.findAll());
+        records.addAll(subtractionRepository.findAll());
+        for (CalculatorEntity record : records) {
+            System.out.println(record.getStatement());
+        }
     }
+
+
+    private void saveCalculation(CalculatorRepository repository, Number num1, String operator, Number num2, Number result) throws SQLException {
+        double num1Value = num1.doubleValue();
+        double num2Value = num2.doubleValue();
+        double resultValue = result.doubleValue();
+        String statement = "(%.2f) %s (%.2f) = %.2f";
+        String formattedStatement = String.format(statement, num1Value, operator, num2Value, resultValue);
+       repository.save(new CalculatorEntity(formattedStatement));
+    }
+
 }
