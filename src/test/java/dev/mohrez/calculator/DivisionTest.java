@@ -23,19 +23,19 @@ public class DivisionTest {
     @Test
     public void canDivideTwoIntegers() {
         Number result = division.calculate(6, 3);
-        assertEquals(2, result);
+        assertEquals(2.0, result);
     }
 
     @Test
     public void canDivideNegativeIntegers() {
         Number result = division.calculate(-6, -3);
-        assertEquals(2, result);
+        assertEquals(2.0, result);
     }
 
     @Test
     public void canDividePositiveAndNegativeIntegers() {
         Number result = division.calculate(6, -3);
-        assertEquals(-2, result);
+        assertEquals(-2.0, result);
     }
 
     @Test
@@ -59,25 +59,25 @@ public class DivisionTest {
     @Test
     public void canDivideTwoFloats() {
         Number result = division.calculate(6.0f, 2.0f);
-        assertEquals(3.0f, result);
+        assertEquals(3.0, result);
     }
 
     @Test
     public void canDividePositiveAndNegativeFloats() {
         Number result = division.calculate(6.0f, -2.0f);
-        assertEquals(-3.0f, result);
+        assertEquals(-3.0, result);
     }
 
     @Test
     public void canDivideTwoLongs() {
         Number result = division.calculate(6000000000L, 2000000000L);
-        assertEquals(3L, result);
+        assertEquals(3.0, result);
     }
 
     @Test
     public void canDividePositiveAndNegativeLongs() {
         Number result = division.calculate(6000000000L, -2000000000L);
-        assertEquals(-3L, result);
+        assertEquals(-3.0, result);
     }
 
 
