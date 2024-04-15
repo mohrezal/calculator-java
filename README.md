@@ -69,3 +69,6 @@ Here's an example of how to use the calculator:
 Calculator calculator = new Calculator();
 Number result = calculator.addition(10, 5);
 System.out.println("Result of addition: " + result);
+
+// View history
+calculator.history();
