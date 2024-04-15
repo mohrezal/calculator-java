@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add exception handling">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add README.md file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -209,7 +205,7 @@
       <workItem from="1712957373988" duration="20000" />
       <workItem from="1712992852630" duration="6000" />
       <workItem from="1713188032628" duration="6636000" />
-      <workItem from="1713194815734" duration="1111000" />
+      <workItem from="1713194815734" duration="1480000" />
     </task>
     <task id="LOCAL-00001" summary="feat: init test">
       <option name="closed" value="true" />
@@ -419,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713195423144</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="feat: add README.md file">
+      <option name="closed" value="true" />
+      <created>1713196285700</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1713196285700</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +444,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: init test" />
     <MESSAGE value="feat: add `add` method" />
     <MESSAGE value="feat: add test to add method" />
     <MESSAGE value="feat: create 4 class for each math operation" />
@@ -465,7 +468,8 @@
     <MESSAGE value="fix: test" />
     <MESSAGE value="fix: add env variable" />
     <MESSAGE value="feat: add exception handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add exception handling" />
+    <MESSAGE value="feat: add README.md file" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add README.md file" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

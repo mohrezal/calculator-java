@@ -39,7 +39,7 @@ CREATE TABLE addition (
 3. **Modify .env File**: Update the `.env` file with your H2 database configuration:
 
 ```properties
-JDBC_URL=jdbc:h2:~/calculator
+JDBC_URL=jdbc:h2:~/calculator <!-- Note: This path format works for macOS. For other operating systems, please verify the appropriate path format. -->
 JDBC_USERNAME=your_username
 JDBC_PASSWORD=your_password
 ```
