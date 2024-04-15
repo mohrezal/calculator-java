@@ -30,6 +30,8 @@ public class Main {
            calculator.division(144, 12);
            calculator.subtraction(18, 6.75);
            calculator.addition(100, 200);
+           calculator.multiplication(2,2);
+           calculator.multiplication(-2,2);
            calculator.history();
        }catch (Exception exception) {
            System.out.println(exception.getMessage());
