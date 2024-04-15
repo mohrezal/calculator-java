@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add final">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="fix: add env variable">
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/DivisionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/DivisionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,57 +37,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.AdditionRepositoryTest.canGetAllAdditionRecords.executor": "Run",
-    "JUnit.AdditionRepositoryTest.canSaveMultipleRecords.executor": "Run",
-    "JUnit.AdditionRepositoryTest.canSaveNewAdditionRecord.executor": "Run",
-    "JUnit.AdditionRepositoryTest.executor": "Run",
-    "JUnit.AdditionTest.executor": "Run",
-    "JUnit.CalculatorTest.additionLongNumber.executor": "Run",
-    "JUnit.CalculatorTest.additionTwoPositiveDoubleNumbers.executor": "Run",
-    "JUnit.CalculatorTest.divideByZero.executor": "Run",
-    "JUnit.CalculatorTest.divisionByZero.executor": "Run",
-    "JUnit.CalculatorTest.executor": "Run",
-    "JUnit.CalculatorTest.subtractionTwoNegativeDoubleNumbers.executor": "Run",
-    "JUnit.CalculatorTest.subtractionTwoPositiveDoubleNumbers.executor": "Run",
-    "JUnit.CalculatorTest.subtractionWithZeroNumber.executor": "Run",
-    "JUnit.CalculatorTest.testAddition.executor": "Run",
-    "JUnit.CalculatorTest.testDivision.executor": "Run",
-    "JUnit.CalculatorTest.testMultiplication.executor": "Run",
-    "JUnit.CalculatorTest.testMultiplicationDouble.executor": "Run",
-    "JUnit.CalculatorTest.testSubtraction.executor": "Run",
-    "JUnit.CalculatorTest.zeroDoublePlusZeroDoubleIsEqualToZeroDouble.executor": "Debug",
-    "JUnit.DivisionTest.executor": "Run",
-    "JUnit.MultiplicationTest,canMultiplyPositiveAndNegativeFloats and 1 more.executor": "Run",
-    "JUnit.SubtractionTest.executor": "Run",
-    "JUnit.calculator in Calculator.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "build.tools",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.AdditionRepositoryTest.canGetAllAdditionRecords.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AdditionRepositoryTest.canSaveMultipleRecords.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AdditionRepositoryTest.canSaveNewAdditionRecord.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AdditionRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AdditionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.additionLongNumber.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.additionTwoPositiveDoubleNumbers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.divideByZero.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.divisionByZero.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.subtractionTwoNegativeDoubleNumbers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.subtractionTwoPositiveDoubleNumbers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.subtractionWithZeroNumber.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.testAddition.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.testDivision.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.testMultiplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.testMultiplicationDouble.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.testSubtraction.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.zeroDoublePlusZeroDoubleIsEqualToZeroDouble.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.DivisionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MultiplicationTest,canMultiplyPositiveAndNegativeFloats and 1 more.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SubtractionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.calculator in Calculator.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
@@ -209,6 +204,7 @@
       <workItem from="1712957373988" duration="20000" />
       <workItem from="1712992852630" duration="6000" />
       <workItem from="1713188032628" duration="6636000" />
+      <workItem from="1713194815734" duration="472000" />
     </task>
     <task id="LOCAL-00001" summary="feat: init test">
       <option name="closed" value="true" />
@@ -394,7 +390,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712953785075</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="fix: test">
+      <option name="closed" value="true" />
+      <created>1713195150422</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1713195150422</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix: add env variable">
+      <option name="closed" value="true" />
+      <created>1713195172890</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1713195172890</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +449,9 @@
     <MESSAGE value="feat: add Math repositories" />
     <MESSAGE value="feat: add saving operation into data-base" />
     <MESSAGE value="feat: add final" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add final" />
+    <MESSAGE value="fix: test" />
+    <MESSAGE value="fix: add env variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: add env variable" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
