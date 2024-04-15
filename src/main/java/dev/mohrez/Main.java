@@ -1,6 +1,7 @@
 package dev.mohrez;
 
 import dev.mohrez.calculator.Calculator;
+import io.github.cdimascio.dotenv.Dotenv;
 
 import java.sql.SQLException;
 
@@ -32,5 +33,7 @@ public class Main {
         calculator.subtraction(18, 6.75);
         calculator.addition(100, 200);
         calculator.history();
+
+
     }
 }

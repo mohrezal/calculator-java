@@ -1,6 +1,7 @@
 package dev.mohrez.calculator;
 
 import dev.mohrez.calculator.repository.*;
+import io.github.cdimascio.dotenv.Dotenv;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -21,9 +22,11 @@ public class Calculator implements ICalculator {
     private final CalculatorRepository divisionRepository;
 
     public Calculator() throws SQLException {
-        // Initialize database connection and repositories
-        // Database connection and repositories
-        Connection connection = DriverManager.getConnection("jdbc:h2:~/calculator", "mohammadreza", "12345");
+        Dotenv dotenv = Dotenv.load();
+        String jdbcUrl = dotenv.get("JDBC_URL");
+        String jdbcUsername= dotenv.get("JDBC_USERNAME");
+        String jdbcPassword = dotenv.get("JDBC_PASSWORD");
+        Connection connection = DriverManager.getConnection(jdbcUrl, jdbcUsername, jdbcPassword);
         additionRepository = new AdditionRepository(connection);
         multiplicationRepository = new MultiplicationRepository(connection);
         subtractionRepository = new SubtractionRepository(connection);

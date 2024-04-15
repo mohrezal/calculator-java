@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f10aa819-c213-4ad6-8f42-e482c9b131da" name="Changes" comment="feat: add final">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/mohrez/calculator/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/DivisionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/mohrez/calculator/DivisionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +89,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "build.tools",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -200,7 +205,10 @@
       <workItem from="1712582543812" duration="3190000" />
       <workItem from="1712739375466" duration="10156000" />
       <workItem from="1712764390981" duration="90000" />
-      <workItem from="1712949817992" duration="3396000" />
+      <workItem from="1712949817992" duration="4164000" />
+      <workItem from="1712957373988" duration="20000" />
+      <workItem from="1712992852630" duration="6000" />
+      <workItem from="1713188032628" duration="6636000" />
     </task>
     <task id="LOCAL-00001" summary="feat: init test">
       <option name="closed" value="true" />
@@ -378,11 +386,22 @@
       <option name="project" value="LOCAL" />
       <updated>1712953207621</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat: add final">
+      <option name="closed" value="true" />
+      <created>1712953785075</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1712953785075</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -419,5 +438,9 @@
     <MESSAGE value="feat: add saving operation into data-base" />
     <MESSAGE value="feat: add final" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: add final" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
